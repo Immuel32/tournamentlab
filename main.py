@@ -1,10 +1,12 @@
-class Teams:
-    def generate_fixtures(self, teams):
-        fixtures = []
+from tournament.fixtures import FixtureManager
 
-        for i in range(len(teams)):
-            for j in range(i + 1, len(teams)):
+teams = ["red", "blue", "green", "yellow"]
 
-                fixtures.append((teams[i], teams[j]))
-            
-        return fixtures
+manager = FixtureManager()
+
+fixtures = manager.generate_fixtures(teams)
+
+for fixture in fixtures:
+    print(fixture)
+
+print("Total fixtures:", len(fixtures))
