@@ -1,12 +1,10 @@
-from tournament.fixtures import FixtureManager
+from tournament.cli import TournamentCLI
 
-teams = ["red", "blue", "green", "yellow"]
+def main():
+    """Application entry point."""
 
-manager = FixtureManager()
+    app = TournamentCLI()
+    app.run()
 
-fixtures = manager.generate_fixtures(teams)
-
-for fixture in fixtures:
-    print(fixture)
-
-print("Total fixtures:", len(fixtures))
+if __name__ == "__main__":
+    main()
