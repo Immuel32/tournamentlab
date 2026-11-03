@@ -44,38 +44,41 @@ class TournamentCLI:
         )
 
     def register_teams(self):
-        """Collect team names from the user."""
+        """Register the number of teams selected for a new tournament."""
+
+        if self.team_manager.teams:
+            print("\nTeams are already registered.")
+            print("Start a new tournament before registering new teams.")
+            return
 
         print("\n--- Register Teams ---")
 
-        while len(self.team_manager.teams) < TeamManager.MAX_TEAMS:
+        try:
+            team_count = int(input("How many teams? (4-8): "))
 
-            print(
-                f"\nRegistered teams: "
-                f"{len(self.team_manager.teams)}"
-            )
+            if not TeamManager.MIN_TEAMS <= team_count <= TeamManager.MAX_TEAMS:
+                print("Please select between 4 and 8 teams.")
+                return
 
-            print("Enter 'done' when registration is complete.")
+            # Register exactly the number of teams selected.
+            for number in range(team_count):
+                while True:
+                    name = input(f"Enter team {number + 1} name: ")
 
-            name = input("Enter team name: ").strip()
+                    try:
+                        self.team_manager.register_team(name)
+                        print(f"{name.strip()} registered successfully.")
+                        break
 
-            if name.casefold() == "done":
-                break
+                    except ValueError as error:
+                        print(f"Error: {error}")
 
-            try:
-                self.team_manager.register_team(name)
-                self.save_tournament()
+            self.save_tournament()
+            print("\nTeam registration completed successfully.")
 
-                print(f"{name} registered successfully.")
-
-            except ValueError as error:
-                print(f"Error: {error}")
-
-        print("\nRegistered Teams:")
-
-        for team in self.team_manager.get_teams():
-            print(f"- {team}")
-
+        except ValueError:
+            print("Please enter a valid number.")
+        
     def generate_fixtures(self):
         """Generate the single round-robin schedule."""
 

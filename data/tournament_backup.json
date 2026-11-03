@@ -1,0 +1,238 @@
+{
+    "teams": [
+        "falcon",
+        "tigers",
+        "wolves",
+        "dragons",
+        "minions",
+        "falcons",
+        "warri",
+        "niger"
+    ],
+    "fixtures": [
+        {
+            "id": 1,
+            "home_team": "falcon",
+            "away_team": "tigers",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 2,
+            "home_team": "falcon",
+            "away_team": "wolves",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 3,
+            "home_team": "falcon",
+            "away_team": "dragons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 4,
+            "home_team": "falcon",
+            "away_team": "minions",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 5,
+            "home_team": "falcon",
+            "away_team": "falcons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 6,
+            "home_team": "falcon",
+            "away_team": "warri",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 7,
+            "home_team": "falcon",
+            "away_team": "niger",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 8,
+            "home_team": "tigers",
+            "away_team": "wolves",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 9,
+            "home_team": "tigers",
+            "away_team": "dragons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 10,
+            "home_team": "tigers",
+            "away_team": "minions",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 11,
+            "home_team": "tigers",
+            "away_team": "falcons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 12,
+            "home_team": "tigers",
+            "away_team": "warri",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 13,
+            "home_team": "tigers",
+            "away_team": "niger",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 14,
+            "home_team": "wolves",
+            "away_team": "dragons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 15,
+            "home_team": "wolves",
+            "away_team": "minions",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 16,
+            "home_team": "wolves",
+            "away_team": "falcons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 17,
+            "home_team": "wolves",
+            "away_team": "warri",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 18,
+            "home_team": "wolves",
+            "away_team": "niger",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 19,
+            "home_team": "dragons",
+            "away_team": "minions",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 20,
+            "home_team": "dragons",
+            "away_team": "falcons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 21,
+            "home_team": "dragons",
+            "away_team": "warri",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 22,
+            "home_team": "dragons",
+            "away_team": "niger",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 23,
+            "home_team": "minions",
+            "away_team": "falcons",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 24,
+            "home_team": "minions",
+            "away_team": "warri",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 25,
+            "home_team": "minions",
+            "away_team": "niger",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 26,
+            "home_team": "falcons",
+            "away_team": "warri",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 27,
+            "home_team": "falcons",
+            "away_team": "niger",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        },
+        {
+            "id": 28,
+            "home_team": "warri",
+            "away_team": "niger",
+            "status": "pending",
+            "home_score": null,
+            "away_score": null
+        }
+    ]
+}
