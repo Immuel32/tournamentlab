@@ -42,6 +42,32 @@ class TournamentCLI:
             self.team_manager.teams,
             self.fixtures
         )
+    def start_new_tournament(self):
+        """Reset the current tournament after user confirmation."""
+
+        print("\n--- Start New Tournament ---")
+
+        if not self.team_manager.teams and not self.fixtures:
+            print("There is no existing tournament to replace.")
+            return
+
+        confirmation = input(
+            "This will replace the current tournament. Continue? (yes/no): "
+        ).strip().casefold()
+
+        if confirmation != "yes":
+            print("Starting a new tournament cancelled.")
+            return
+
+        # Clear the current tournament.
+        self.team_manager.teams = []
+        self.fixtures = []
+
+        # Persist the empty tournament.
+        self.save_tournament()
+
+        print("A new tournament is ready.")
+        print("You can now register your teams.")
 
     def register_teams(self):
         """Register the number of teams selected for a new tournament."""
@@ -264,8 +290,9 @@ class TournamentCLI:
         print("5. View standings")
         print("6. Simulate a match")
         print("7. Show champion")
-        print("8. Save tournament")
-        print("9. Exit")
+        print("8. Start a new tournament")
+        print("9. Save tournament")
+        print("10. Exit")
 
     def run(self):
         """Run the main application loop."""
@@ -273,7 +300,6 @@ class TournamentCLI:
         print("\nWelcome to TournamentLab!")
 
         while True:
-
             self.show_menu()
 
             choice = input("\nSelect an option: ").strip()
@@ -306,13 +332,16 @@ class TournamentCLI:
                 self.show_champion()
 
             elif choice == "8":
+                self.start_new_tournament()
+
+            elif choice == "9":
                 self.save_tournament()
                 print("\nTournament saved successfully.")
 
-            elif choice == "9":
+            elif choice == "10":
                 self.save_tournament()
                 print("\nTournament saved. Goodbye!")
                 break
 
             else:
-                print("\nInvalid option. Please select 1–9.")
+                print("\nInvalid option. Please select 1–10.")
